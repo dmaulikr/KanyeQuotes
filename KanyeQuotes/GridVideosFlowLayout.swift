@@ -14,10 +14,10 @@ class GridVideosFlowLayout: UICollectionViewFlowLayout {
         
         super.init()
         
-        let margin: CGFloat = 10.0
+        let margin: CGFloat = 1.0
         let screenWidth = UIScreen.mainScreen().bounds.size.width
         
-        itemSize = CGSizeMake(screenWidth/2 - margin*3/2, screenWidth/2 - margin*3/2)
+        itemSize = CGSizeMake(screenWidth/3 - margin*3/2, screenWidth/3 - margin*3/2)
         minimumLineSpacing = margin
         minimumInteritemSpacing = margin/2
         self.sectionInset = UIEdgeInsetsMake(margin, margin, margin, margin)

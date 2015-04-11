@@ -27,7 +27,7 @@ class GridViewController: UIViewController {
         if let headerView = self.headerView {
             
             let headerLabel = UILabel()
-            headerLabel.text = "Pick a yeezy quote"
+            headerLabel.text = "YEEZY QUOTES"
             headerLabel.textAlignment = NSTextAlignment.Center
             headerLabel.setTranslatesAutoresizingMaskIntoConstraints(false)
             headerView.addSubview(headerLabel)

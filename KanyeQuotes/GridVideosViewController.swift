@@ -7,11 +7,21 @@
 //
 
 import UIKit
+import AVFoundation
+import MediaPlayer
 
-let reuseIdentifier = "Cell"
+let CellIdentifier = "CellIdentifier"
 
 class GridVideosViewController: UICollectionViewController {
-
+    
+    let videoList:[String] = [
+        "george_bush_square.mp4",
+        "answers_sway_square.mp4",
+        "marginalize_me_square.mp4",
+        "warhol_square.mp4",
+        "impactful_artist_square.mp4",
+        "no_ralph_square.mp4"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,7 +29,7 @@ class GridVideosViewController: UICollectionViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Register cell classes
-        self.collectionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        self.collectionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: CellIdentifier)
         
         self.setupViews()
     }
@@ -34,55 +44,96 @@ class GridVideosViewController: UICollectionViewController {
 
     // MARK: UICollectionViewDataSource
 
-    override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        //#warning Incomplete method implementation -- Return the number of sections
-        return 1
-    }
-
-
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        //#warning Incomplete method implementation -- Return the number of items in the section
-        return 4
+    
+        return self.videoList.count
     }
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! UICollectionViewCell
+        
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(CellIdentifier, forIndexPath: indexPath) as! UICollectionViewCell
     
         // Configure the cell
-        cell.contentView.backgroundColor = UIColor.blueColor()
+        cell.contentView.backgroundColor = UIColor.clearColor()
     
+        // remove any existing player/player layers
+        var layerToRemove:AVPlayerLayer?
+        if let sublayers = cell.contentView.layer.sublayers {
+            
+            for layer in sublayers {
+                
+                if layer is AVPlayerLayer {
+                    
+                    layerToRemove = layer as? AVPlayerLayer
+                }
+            }
+            if let layerToRemove = layerToRemove {
+                layerToRemove.removeFromSuperlayer()
+            }
+        }
+        
+        // add player and player layer
+        let videoPath: String = self.videoList[indexPath.row]
+        if let
+            player = AVPlayer(URL: self.fileURLFromVideoPath(videoPath)),
+            layer = AVPlayerLayer() {
+                
+                layer.player = player
+                layer.frame = cell.bounds
+                layer.backgroundColor = UIColor.whiteColor().CGColor
+                layer.videoGravity = AVLayerVideoGravityResizeAspectFill
+                
+                cell.contentView.layer.addSublayer(layer)
+        }
+        
         return cell
     }
-
-    // MARK: UICollectionViewDelegate
-
-    /*
-    // Uncomment this method to specify if the specified item should be highlighted during tracking
-    override func collectionView(collectionView: UICollectionView, shouldHighlightItemAtIndexPath indexPath: NSIndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment this method to specify if the specified item should be selected
-    override func collectionView(collectionView: UICollectionView, shouldSelectItemAtIndexPath indexPath: NSIndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-    override func collectionView(collectionView: UICollectionView, shouldShowMenuForItemAtIndexPath indexPath: NSIndexPath) -> Bool {
-        return false
-    }
-
-    override func collectionView(collectionView: UICollectionView, canPerformAction action: Selector, forItemAtIndexPath indexPath: NSIndexPath, withSender sender: AnyObject?) -> Bool {
-        return false
-    }
-
-    override func collectionView(collectionView: UICollectionView, performAction action: Selector, forItemAtIndexPath indexPath: NSIndexPath, withSender sender: AnyObject?) {
     
+    func fileURLFromVideoPath(videoPath: String) -> NSURL? {
+        
+        if let
+            name = videoPath.componentsSeparatedByString(".").first,
+            ext = videoPath.componentsSeparatedByString(".")[1] as String?,
+            path = NSBundle.mainBundle().pathForResource(name, ofType: ext) {
+                
+                return NSURL(fileURLWithPath: path, isDirectory: false)
+        }
+        return nil
     }
-    */
-
+    
+    func generateThumnail(url : NSURL) -> UIImage? {
+        
+        var asset : AVAsset = AVAsset.assetWithURL(url) as! AVAsset
+        var assetImgGenerate : AVAssetImageGenerator = AVAssetImageGenerator(asset: asset)
+        assetImgGenerate.appliesPreferredTrackTransform = true
+        var error       : NSError? = nil
+        var time        : CMTime = CMTimeMake(1, 30)
+        var img         : CGImageRef = assetImgGenerate.copyCGImageAtTime(time, actualTime: nil, error: &error)
+        var frameImg    : UIImage = UIImage(CGImage: img)!
+        
+        return frameImg
+    }
+    
+    // MARK: UICollectionViewDelegate
+    
+    override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        
+        if let cell = collectionView.cellForItemAtIndexPath(indexPath) {
+            
+            for layer in cell.contentView.layer.sublayers {
+                
+                if layer is AVPlayerLayer {
+                    
+                    if let
+                        playerLayer = layer as? AVPlayerLayer,
+                        player = playerLayer.player {
+                            
+                            player.seekToTime(kCMTimeZero)
+                            player.play()
+                            break
+                    }
+                }
+            }
+        }
+    }
 }
