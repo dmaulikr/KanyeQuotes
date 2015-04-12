@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D2A32AA1ADAD952004D5BA2 /* bigger_than_walmart_square.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0D2A32A31ADACA41004D5BA2 /* bigger_than_walmart_square.mp4 */; };
+		0D2A32AB1ADAD957004D5BA2 /* shakespeare_square.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0D2A32A41ADACA41004D5BA2 /* shakespeare_square.mp4 */; };
+		0D2A32AC1ADAD957004D5BA2 /* kim_kardijon_square.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0D2A32A51ADACA41004D5BA2 /* kim_kardijon_square.mp4 */; };
+		0D2A32AD1ADAD957004D5BA2 /* jordans_on_the_beach_square.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0D2A32A81ADACA41004D5BA2 /* jordans_on_the_beach_square.mp4 */; };
+		0D2A32B11ADADAF3004D5BA2 /* leather_jogging_pants_square.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0D2A32AE1ADADAD3004D5BA2 /* leather_jogging_pants_square.mp4 */; };
+		0D2A32B31ADADCB1004D5BA2 /* fan_of_yourself_square.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0D2A32B21ADADCB1004D5BA2 /* fan_of_yourself_square.mp4 */; };
 		0D38684F1AC3A113004A0EC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38684E1AC3A113004A0EC0 /* AppDelegate.swift */; };
 		0D3868521AC3A113004A0EC0 /* KanyeQuotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0D3868501AC3A113004A0EC0 /* KanyeQuotes.xcdatamodeld */; };
 		0D3868591AC3A113004A0EC0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D3868581AC3A113004A0EC0 /* Images.xcassets */; };
@@ -25,11 +31,9 @@
 		0DA4D5191ADA0A0F006D4017 /* george_bush_square.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0DA4D5181ADA0A0F006D4017 /* george_bush_square.mp4 */; };
 		0DA4D51B1ADA0D40006D4017 /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA4D51A1ADA0D40006D4017 /* VideoPlayer.swift */; };
 		0DA4D5361ADA36F4006D4017 /* a_god_square.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0DA4D51C1ADA368A006D4017 /* a_god_square.mp4 */; };
-		0DA4D5371ADA36F4006D4017 /* fan_of_yourself_square.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0DA4D51D1ADA368A006D4017 /* fan_of_yourself_square.mp4 */; };
 		0DA4D5391ADA36F4006D4017 /* in_paris_square.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0DA4D51F1ADA368A006D4017 /* in_paris_square.mp4 */; };
 		0DA4D53B1ADA36F4006D4017 /* biggest_rockstar_square.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0DA4D5211ADA368A006D4017 /* biggest_rockstar_square.mp4 */; };
 		0DA4D53D1ADA36F4006D4017 /* rap_new_rock_square.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0DA4D5231ADA368A006D4017 /* rap_new_rock_square.mp4 */; };
-		0DA4D53E1ADA36F4006D4017 /* leather_jogging_pant2_square.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0DA4D5241ADA368A006D4017 /* leather_jogging_pant2_square.mp4 */; };
 		22AA22FE767D8F8D5D4D6C1F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F51BA87A2E42B88474E762A0 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +52,10 @@
 		0D2A32A41ADACA41004D5BA2 /* shakespeare_square.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = shakespeare_square.mp4; path = videos/shakespeare_square.mp4; sourceTree = "<group>"; };
 		0D2A32A51ADACA41004D5BA2 /* kim_kardijon_square.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = kim_kardijon_square.mp4; path = videos/kim_kardijon_square.mp4; sourceTree = "<group>"; };
 		0D2A32A81ADACA41004D5BA2 /* jordans_on_the_beach_square.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = jordans_on_the_beach_square.mp4; path = videos/jordans_on_the_beach_square.mp4; sourceTree = "<group>"; };
+		0D2A32AE1ADADAD3004D5BA2 /* leather_jogging_pants_square.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = leather_jogging_pants_square.mp4; sourceTree = "<group>"; };
+		0D2A32AF1ADADAD3004D5BA2 /* rap_new_rock_square.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = rap_new_rock_square.mp4; sourceTree = "<group>"; };
+		0D2A32B01ADADAD3004D5BA2 /* biggest_rockstar_square.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = biggest_rockstar_square.mp4; sourceTree = "<group>"; };
+		0D2A32B21ADADCB1004D5BA2 /* fan_of_yourself_square.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = fan_of_yourself_square.mp4; path = videos/fan_of_yourself_square.mp4; sourceTree = "<group>"; };
 		0D3868491AC3A113004A0EC0 /* KanyeQuotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KanyeQuotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D38684D1AC3A113004A0EC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D38684E1AC3A113004A0EC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -70,11 +78,9 @@
 		0DA4D5181ADA0A0F006D4017 /* george_bush_square.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = george_bush_square.mp4; path = videos/george_bush_square.mp4; sourceTree = "<group>"; };
 		0DA4D51A1ADA0D40006D4017 /* VideoPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
 		0DA4D51C1ADA368A006D4017 /* a_god_square.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = a_god_square.mp4; path = videos/a_god_square.mp4; sourceTree = "<group>"; };
-		0DA4D51D1ADA368A006D4017 /* fan_of_yourself_square.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = fan_of_yourself_square.mp4; path = videos/fan_of_yourself_square.mp4; sourceTree = "<group>"; };
 		0DA4D51F1ADA368A006D4017 /* in_paris_square.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = in_paris_square.mp4; path = videos/in_paris_square.mp4; sourceTree = "<group>"; };
 		0DA4D5211ADA368A006D4017 /* biggest_rockstar_square.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = biggest_rockstar_square.mp4; path = videos/biggest_rockstar_square.mp4; sourceTree = "<group>"; };
 		0DA4D5231ADA368A006D4017 /* rap_new_rock_square.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = rap_new_rock_square.mp4; path = videos/rap_new_rock_square.mp4; sourceTree = "<group>"; };
-		0DA4D5241ADA368A006D4017 /* leather_jogging_pant2_square.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = leather_jogging_pant2_square.mp4; path = videos/leather_jogging_pant2_square.mp4; sourceTree = "<group>"; };
 		B931E560FBF05E527FE626BD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		EB39C342E7A976C7BDCFCE54 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F51BA87A2E42B88474E762A0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,21 +173,23 @@
 		0DF963C31AC5017D00D826AF /* videos */ = {
 			isa = PBXGroup;
 			children = (
+				0D2A32B21ADADCB1004D5BA2 /* fan_of_yourself_square.mp4 */,
 				0DA4D5181ADA0A0F006D4017 /* george_bush_square.mp4 */,
 				0DA4D5061AD9C89B006D4017 /* impactful_artist_square.mp4 */,
 				0DA4D5071AD9C89B006D4017 /* warhol_square.mp4 */,
 				0DA4D5081AD9C89B006D4017 /* no_ralph_square.mp4 */,
 				0DA4D5091AD9C89B006D4017 /* answers_sway_square.mp4 */,
 				0DA4D51C1ADA368A006D4017 /* a_god_square.mp4 */,
-				0DA4D51D1ADA368A006D4017 /* fan_of_yourself_square.mp4 */,
 				0DA4D51F1ADA368A006D4017 /* in_paris_square.mp4 */,
 				0DA4D5211ADA368A006D4017 /* biggest_rockstar_square.mp4 */,
 				0DA4D5231ADA368A006D4017 /* rap_new_rock_square.mp4 */,
-				0DA4D5241ADA368A006D4017 /* leather_jogging_pant2_square.mp4 */,
 				0D2A32A31ADACA41004D5BA2 /* bigger_than_walmart_square.mp4 */,
 				0D2A32A41ADACA41004D5BA2 /* shakespeare_square.mp4 */,
 				0D2A32A51ADACA41004D5BA2 /* kim_kardijon_square.mp4 */,
 				0D2A32A81ADACA41004D5BA2 /* jordans_on_the_beach_square.mp4 */,
+				0D2A32AE1ADADAD3004D5BA2 /* leather_jogging_pants_square.mp4 */,
+				0D2A32AF1ADADAD3004D5BA2 /* rap_new_rock_square.mp4 */,
+				0D2A32B01ADADAD3004D5BA2 /* biggest_rockstar_square.mp4 */,
 			);
 			name = videos;
 			sourceTree = "<group>";
@@ -286,15 +294,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D2A32B11ADADAF3004D5BA2 /* leather_jogging_pants_square.mp4 in Resources */,
 				0DA4D53D1ADA36F4006D4017 /* rap_new_rock_square.mp4 in Resources */,
+				0D2A32AB1ADAD957004D5BA2 /* shakespeare_square.mp4 in Resources */,
 				0DA4D50C1AD9CABF006D4017 /* impactful_artist_square.mp4 in Resources */,
+				0D2A32AA1ADAD952004D5BA2 /* bigger_than_walmart_square.mp4 in Resources */,
 				0D38685C1AC3A113004A0EC0 /* LaunchScreen.xib in Resources */,
 				0DA4D5361ADA36F4006D4017 /* a_god_square.mp4 in Resources */,
 				0DA4D50F1AD9CABF006D4017 /* answers_sway_square.mp4 in Resources */,
+				0D2A32AD1ADAD957004D5BA2 /* jordans_on_the_beach_square.mp4 in Resources */,
 				0D3868591AC3A113004A0EC0 /* Images.xcassets in Resources */,
-				0DA4D53E1ADA36F4006D4017 /* leather_jogging_pant2_square.mp4 in Resources */,
-				0DA4D5371ADA36F4006D4017 /* fan_of_yourself_square.mp4 in Resources */,
+				0D2A32AC1ADAD957004D5BA2 /* kim_kardijon_square.mp4 in Resources */,
 				0DA4D5391ADA36F4006D4017 /* in_paris_square.mp4 in Resources */,
+				0D2A32B31ADADCB1004D5BA2 /* fan_of_yourself_square.mp4 in Resources */,
 				0DA4D50D1AD9CABF006D4017 /* warhol_square.mp4 in Resources */,
 				0DA4D53B1ADA36F4006D4017 /* biggest_rockstar_square.mp4 in Resources */,
 				0DA4D50E1AD9CABF006D4017 /* no_ralph_square.mp4 in Resources */,

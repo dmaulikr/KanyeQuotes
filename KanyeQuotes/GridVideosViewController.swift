@@ -17,17 +17,17 @@ class GridVideosViewController: UICollectionViewController {
     let videoList:[String] = [
         "impactful_artist_square.mp4",
         "bigger_than_walmart_square.mp4",
-        "kim_kardijon_square.mp4",
         "shakespeare_square.mp4",
         "in_paris_square.mp4",
         "george_bush_square.mp4",
         "rap_new_rock_square.mp4",
+        "kim_kardijon_square.mp4",
         "fan_of_yourself_square.mp4",
         "biggest_rockstar_square.mp4",
         "no_ralph_square.mp4",
         "jordans_on_the_beach_square.mp4",
         "answers_sway_square.mp4",
-        "leather_jogging_pant2_square.mp4",
+        "leather_jogging_pants_square.mp4",
         "a_god_square.mp4",
         "warhol_square.mp4"]
     
@@ -61,7 +61,6 @@ class GridVideosViewController: UICollectionViewController {
         // remove any existing player/player layers
         var layerToRemove:AVPlayerLayer?
         if let sublayers = cell.contentView.layer.sublayers {
-            
             for layer in sublayers {
                 
                 if layer is AVPlayerLayer {
@@ -70,6 +69,7 @@ class GridVideosViewController: UICollectionViewController {
                 }
             }
             if let layerToRemove = layerToRemove {
+                NSLog("indexPath.row: %d layerToRemove: %@", indexPath.row, layerToRemove)
                 layerToRemove.removeFromSuperlayer()
             }
         }
@@ -82,7 +82,7 @@ class GridVideosViewController: UICollectionViewController {
 
                 layer.player = player
                 layer.frame = cell.bounds
-                layer.backgroundColor = UIColor.whiteColor().CGColor
+                layer.backgroundColor = UIColor.clearColor().CGColor
                 layer.videoGravity = AVLayerVideoGravityResizeAspectFill
                 
                 cell.contentView.layer.addSublayer(layer)
