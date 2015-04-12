@@ -15,13 +15,15 @@
 		0D3868721AC3A263004A0EC0 /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3868711AC3A263004A0EC0 /* GridViewController.swift */; };
 		0D3868741AC3A41B004A0EC0 /* GridVideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3868731AC3A41B004A0EC0 /* GridVideosViewController.swift */; };
 		0D49A9D51AC3A71B002581F8 /* GridVideosFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D49A9D41AC3A71B002581F8 /* GridVideosFlowLayout.swift */; };
-		0DA4D50A1AD9CABF006D4017 /* george_bush_square.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0DA4D5041AD9C89B006D4017 /* george_bush_square.mp4 */; };
 		0DA4D50B1AD9CABF006D4017 /* marginalize_me_square.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0DA4D5051AD9C89B006D4017 /* marginalize_me_square.mp4 */; };
 		0DA4D50C1AD9CABF006D4017 /* impactful_artist_square.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0DA4D5061AD9C89B006D4017 /* impactful_artist_square.mp4 */; };
 		0DA4D50D1AD9CABF006D4017 /* warhol_square.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0DA4D5071AD9C89B006D4017 /* warhol_square.mp4 */; };
 		0DA4D50E1AD9CABF006D4017 /* no_ralph_square.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0DA4D5081AD9C89B006D4017 /* no_ralph_square.mp4 */; };
 		0DA4D50F1AD9CABF006D4017 /* answers_sway_square.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0DA4D5091AD9C89B006D4017 /* answers_sway_square.mp4 */; };
 		0DA4D5111AD9CC6A006D4017 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DA4D5101AD9CC6A006D4017 /* MediaPlayer.framework */; };
+		0DA4D5131AD9EB97006D4017 /* DraggableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA4D5121AD9EB97006D4017 /* DraggableView.swift */; };
+		0DA4D5151ADA0412006D4017 /* AppInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA4D5141ADA0412006D4017 /* AppInfoView.swift */; };
+		0DA4D5191ADA0A0F006D4017 /* george_bush_square.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0DA4D5181ADA0A0F006D4017 /* george_bush_square.mp4 */; };
 		22AA22FE767D8F8D5D4D6C1F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F51BA87A2E42B88474E762A0 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -48,13 +50,15 @@
 		0D3868711AC3A263004A0EC0 /* GridViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridViewController.swift; sourceTree = "<group>"; };
 		0D3868731AC3A41B004A0EC0 /* GridVideosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridVideosViewController.swift; sourceTree = "<group>"; };
 		0D49A9D41AC3A71B002581F8 /* GridVideosFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridVideosFlowLayout.swift; sourceTree = "<group>"; };
-		0DA4D5041AD9C89B006D4017 /* george_bush_square.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = george_bush_square.mp4; path = videos/george_bush_square.mp4; sourceTree = "<group>"; };
 		0DA4D5051AD9C89B006D4017 /* marginalize_me_square.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = marginalize_me_square.mp4; path = videos/marginalize_me_square.mp4; sourceTree = "<group>"; };
 		0DA4D5061AD9C89B006D4017 /* impactful_artist_square.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = impactful_artist_square.mp4; path = videos/impactful_artist_square.mp4; sourceTree = "<group>"; };
 		0DA4D5071AD9C89B006D4017 /* warhol_square.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = warhol_square.mp4; path = videos/warhol_square.mp4; sourceTree = "<group>"; };
 		0DA4D5081AD9C89B006D4017 /* no_ralph_square.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = no_ralph_square.mp4; path = videos/no_ralph_square.mp4; sourceTree = "<group>"; };
 		0DA4D5091AD9C89B006D4017 /* answers_sway_square.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = answers_sway_square.mp4; path = videos/answers_sway_square.mp4; sourceTree = "<group>"; };
 		0DA4D5101AD9CC6A006D4017 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		0DA4D5121AD9EB97006D4017 /* DraggableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableView.swift; sourceTree = "<group>"; };
+		0DA4D5141ADA0412006D4017 /* AppInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInfoView.swift; sourceTree = "<group>"; };
+		0DA4D5181ADA0A0F006D4017 /* george_bush_square.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = george_bush_square.mp4; path = videos/george_bush_square.mp4; sourceTree = "<group>"; };
 		B931E560FBF05E527FE626BD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		EB39C342E7A976C7BDCFCE54 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F51BA87A2E42B88474E762A0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +109,8 @@
 			children = (
 				0D38684E1AC3A113004A0EC0 /* AppDelegate.swift */,
 				0D3868711AC3A263004A0EC0 /* GridViewController.swift */,
+				0DA4D5141ADA0412006D4017 /* AppInfoView.swift */,
+				0DA4D5121AD9EB97006D4017 /* DraggableView.swift */,
 				0D49A9D41AC3A71B002581F8 /* GridVideosFlowLayout.swift */,
 				0D3868731AC3A41B004A0EC0 /* GridVideosViewController.swift */,
 				0D3868581AC3A113004A0EC0 /* Images.xcassets */,
@@ -144,7 +150,7 @@
 		0DF963C31AC5017D00D826AF /* videos */ = {
 			isa = PBXGroup;
 			children = (
-				0DA4D5041AD9C89B006D4017 /* george_bush_square.mp4 */,
+				0DA4D5181ADA0A0F006D4017 /* george_bush_square.mp4 */,
 				0DA4D5051AD9C89B006D4017 /* marginalize_me_square.mp4 */,
 				0DA4D5061AD9C89B006D4017 /* impactful_artist_square.mp4 */,
 				0DA4D5071AD9C89B006D4017 /* warhol_square.mp4 */,
@@ -257,11 +263,11 @@
 				0DA4D50C1AD9CABF006D4017 /* impactful_artist_square.mp4 in Resources */,
 				0DA4D50B1AD9CABF006D4017 /* marginalize_me_square.mp4 in Resources */,
 				0D38685C1AC3A113004A0EC0 /* LaunchScreen.xib in Resources */,
-				0DA4D50A1AD9CABF006D4017 /* george_bush_square.mp4 in Resources */,
 				0DA4D50F1AD9CABF006D4017 /* answers_sway_square.mp4 in Resources */,
 				0D3868591AC3A113004A0EC0 /* Images.xcassets in Resources */,
 				0DA4D50D1AD9CABF006D4017 /* warhol_square.mp4 in Resources */,
 				0DA4D50E1AD9CABF006D4017 /* no_ralph_square.mp4 in Resources */,
+				0DA4D5191ADA0A0F006D4017 /* george_bush_square.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,7 +318,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DA4D5131AD9EB97006D4017 /* DraggableView.swift in Sources */,
 				0D3868721AC3A263004A0EC0 /* GridViewController.swift in Sources */,
+				0DA4D5151ADA0412006D4017 /* AppInfoView.swift in Sources */,
 				0D49A9D51AC3A71B002581F8 /* GridVideosFlowLayout.swift in Sources */,
 				0D3868741AC3A41B004A0EC0 /* GridVideosViewController.swift in Sources */,
 				0D38684F1AC3A113004A0EC0 /* AppDelegate.swift in Sources */,

@@ -35,11 +35,6 @@ class GridVideosViewController: UICollectionViewController {
     }
     
     func setupViews() {
-     
-        if let collectionView = self.collectionView {
-     
-            collectionView.backgroundColor = UIColor.whiteColor()
-        }
     }
 
     // MARK: UICollectionViewDataSource

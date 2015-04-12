@@ -10,11 +10,12 @@ import UIKit
 
 class GridViewController: UIViewController {
     
-    var headerView: UIView?
-    var gridContainerView: UIView?
-    var gridVideosViewController: GridVideosViewController?
+    var appInfoView = AppInfoView()
+    var gridContainerView = DraggableView()
+    var gridVideosViewController: GridVideosViewController = GridVideosViewController(collectionViewLayout: GridVideosFlowLayout())
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
 
         setupViews()
@@ -22,84 +23,42 @@ class GridViewController: UIViewController {
     
     func setupViews() {
         
-        let headerViewHeight:CGFloat = 60.0
-        self.headerView = UIView()
-        if let headerView = self.headerView {
-            
-            let headerLabel = UILabel()
-            headerLabel.text = "YEEZY QUOTES"
-            headerLabel.textAlignment = NSTextAlignment.Center
-            headerLabel.setTranslatesAutoresizingMaskIntoConstraints(false)
-            headerView.addSubview(headerLabel)
-            headerView.addConstraints(
-                NSLayoutConstraint.constraintsWithVisualFormat(
-                    "V:|-20-[headerLabel]|",
-                    options: nil,
-                    metrics: nil,
-                    views: ["headerLabel":headerLabel]))
-            headerView.addConstraints(
-                NSLayoutConstraint.constraintsWithVisualFormat(
-                    "H:|[headerLabel]|",
-                    options: nil,
-                    metrics: nil,
-                    views: ["headerLabel":headerLabel]))
-            
-            
-            headerView.backgroundColor = UIColor.whiteColor()
-            headerView.setTranslatesAutoresizingMaskIntoConstraints(false)
-            
-            self.view.addSubview(headerView)
-            
-            let metrics = ["headerViewHeight": headerViewHeight]
-            let views = ["headerView": headerView]
-            
-            self.view.addConstraints(
-                NSLayoutConstraint.constraintsWithVisualFormat(
-                    "V:|-0-[headerView(headerViewHeight)]",
-                    options: nil,
-                    metrics: metrics,
-                    views: views))
-            
-            self.view.addConstraints(
-                NSLayoutConstraint.constraintsWithVisualFormat(
-                    "H:|-0-[headerView]-0-|",
-                    options: nil,
-                    metrics: metrics,
-                    views: views))
-        }
+        appInfoView.setTranslatesAutoresizingMaskIntoConstraints(false)
+        self.view.addSubview(appInfoView)
+        self.view.addConstraints(
+            NSLayoutConstraint.constraintsWithVisualFormat(
+                "V:|-0-[appInfoView]-0-|",
+                options: nil,
+                metrics: nil,
+                views: ["appInfoView": appInfoView]))
+        self.view.addConstraints(
+            NSLayoutConstraint.constraintsWithVisualFormat(
+                "H:|-0-[appInfoView]-0-|",
+                options: nil,
+                metrics: nil,
+                views: ["appInfoView": appInfoView]))
         
-        self.gridContainerView = UIView()
-        if let gridContainerView = self.gridContainerView {
-            
-            gridContainerView.setTranslatesAutoresizingMaskIntoConstraints(false)
-            self.view.addSubview(gridContainerView)
-            self.view.addConstraints(
-                NSLayoutConstraint.constraintsWithVisualFormat(
-                    "V:|-(headerViewHeight)-[gridContainerView]-0-|",
-                    options: nil,
-                    metrics: ["headerViewHeight": headerViewHeight],
-                    views: ["gridContainerView": gridContainerView]))
-            self.view.addConstraints(
-                NSLayoutConstraint.constraintsWithVisualFormat(
-                    "H:|-0-[gridContainerView]-0-|",
-                    options: nil,
-                    metrics: nil,
-                    views: ["gridContainerView": gridContainerView]))
-        }
+        gridContainerView.backgroundColor = UIColor(red: 10, green: 10, blue: 10, alpha: 1)
+        gridContainerView.setTranslatesAutoresizingMaskIntoConstraints(false)
+        self.view.addSubview(gridContainerView)
+        self.view.addConstraints(
+            NSLayoutConstraint.constraintsWithVisualFormat(
+                "V:|-0-[gridContainerView]-0-|",
+                options: nil,
+                metrics: nil,
+                views: ["gridContainerView": gridContainerView]))
+        self.view.addConstraints(
+            NSLayoutConstraint.constraintsWithVisualFormat(
+                "H:|-0-[gridContainerView]-0-|",
+                options: nil,
+                metrics: nil,
+                views: ["gridContainerView": gridContainerView]))
         
-        self.gridVideosViewController = GridVideosViewController(collectionViewLayout: GridVideosFlowLayout())
+        gridVideosViewController.view.frame = gridContainerView.bounds
+        gridContainerView.addSubview(gridVideosViewController.view)
         
-        if let gridVideosViewController = self.gridVideosViewController,
-            gridContainerView = self.gridContainerView {
-                
-                println("gridContainerView.bounds: %@", NSStringFromCGRect(gridContainerView.bounds))
-                
-                gridVideosViewController.view.frame = gridContainerView.bounds
-                gridContainerView.addSubview(gridVideosViewController.view)
-                
-                self.addChildViewController(gridVideosViewController)
-                
-                gridVideosViewController.willMoveToParentViewController(self)
-        }
+        self.addChildViewController(gridVideosViewController)
+        
+        gridVideosViewController.willMoveToParentViewController(self)
     }
 }

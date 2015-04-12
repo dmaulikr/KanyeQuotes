@@ -24,6 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             window.makeKeyAndVisible()
         }
         
+        application.statusBarHidden = true
+        
         return true
     }
 
