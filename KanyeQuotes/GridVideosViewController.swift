@@ -57,13 +57,24 @@ class GridVideosViewController: UICollectionViewController {
     
         // Configure the cell
         cell.contentView.backgroundColor = UIColor.clearColor()
-    
+        
+        let videoPath: String = self.videoList[indexPath.row]
+        let videoURL = self.fileURLFromVideoPath(videoPath)
+        
         // remove any existing player/player layers
         var layerToRemove:AVPlayerLayer?
         if let sublayers = cell.contentView.layer.sublayers {
             for layer in sublayers {
                 
                 if layer is AVPlayerLayer {
+                    
+                    let player = layer.player as AVPlayer
+                    if let
+                        currentItem = player.currentItem,
+                        asset = currentItem.asset as? AVURLAsset {
+                            
+                            NSLog("asset.URL: %@", asset.URL)
+                    }
                     
                     layerToRemove = layer as? AVPlayerLayer
                 }
@@ -75,9 +86,8 @@ class GridVideosViewController: UICollectionViewController {
         }
         
         // add player and player layer
-        let videoPath: String = self.videoList[indexPath.row]
         if let
-            player = VideoPlayer(URL: self.fileURLFromVideoPath(videoPath)),
+            player = VideoPlayer(URL: videoURL),
             layer = AVPlayerLayer() {
 
                 layer.player = player

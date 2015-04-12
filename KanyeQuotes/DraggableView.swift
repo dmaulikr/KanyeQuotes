@@ -43,7 +43,7 @@ class DraggableView: UIView {
                 panGesture.state == UIGestureRecognizerState.Changed {
                     
                     let translation = panGesture.translationInView(self)
-                    if (translation.y > 0) {
+                    if (translation.y > GridContainerViewTopMargin) {
                         
                         var frame = self.frame
                         frame.origin.y = translation.y
@@ -55,7 +55,7 @@ class DraggableView: UIView {
                 panGesture.state == UIGestureRecognizerState.Cancelled {
                     
                     var frame = self.frame
-                    frame.origin.y = 0
+                    frame.origin.y = GridContainerViewTopMargin
                     UIView.animateWithDuration(0.3, animations: { () -> Void in
                         
                         self.frame = frame

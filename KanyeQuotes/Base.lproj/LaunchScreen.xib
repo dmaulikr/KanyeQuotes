@@ -10,18 +10,18 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yeezy_1024" translatesAutoresizingMaskIntoConstraints="NO" id="bei-91-A3E">
-                    <rect key="frame" x="189" y="358" width="102" height="102"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yeezy_1024_transparent" translatesAutoresizingMaskIntoConstraints="NO" id="bei-91-A3E">
+                    <rect key="frame" x="215" y="25" width="50" height="50"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="102" id="KTa-Bx-IP7"/>
-                        <constraint firstAttribute="width" constant="102" id="xrr-zh-Yp0"/>
+                        <constraint firstAttribute="height" constant="50" id="KTa-Bx-IP7"/>
+                        <constraint firstAttribute="width" constant="50" id="xrr-zh-Yp0"/>
                     </constraints>
                 </imageView>
             </subviews>
             <color key="backgroundColor" red="0.078431372549019607" green="0.058823529411764705" blue="0.058823529411764705" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstAttribute="centerX" secondItem="bei-91-A3E" secondAttribute="centerX" id="26F-Jd-hlr"/>
-                <constraint firstAttribute="bottom" secondItem="bei-91-A3E" secondAttribute="bottom" constant="20" id="hPn-kq-TjM"/>
+                <constraint firstItem="bei-91-A3E" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="25" id="fOQ-xb-Jrh"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -29,6 +29,6 @@
         </view>
     </objects>
     <resources>
-        <image name="yeezy_1024" width="512" height="512"/>
+        <image name="yeezy_1024_transparent" width="1024" height="1024"/>
     </resources>
 </document>

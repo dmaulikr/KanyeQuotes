@@ -8,6 +8,16 @@
 
 import UIKit
 
+extension UIColor {
+    
+    class func yeezyBlackColor() -> UIColor {
+        
+        return UIColor(red: 25.0/255.0, green: 10.0/255.0, blue: 10.0/255.0, alpha: 1.0)
+    }
+}
+
+let GridContainerViewTopMargin:CGFloat = 18.0
+
 class GridViewController: UIViewController {
     
     var appInfoView = AppInfoView()
@@ -42,9 +52,9 @@ class GridViewController: UIViewController {
         self.view.addSubview(gridContainerView)
         self.view.addConstraints(
             NSLayoutConstraint.constraintsWithVisualFormat(
-                "V:|-0-[gridContainerView]-0-|",
+                "V:|-(topMargin)-[gridContainerView]-0-|",
                 options: nil,
-                metrics: nil,
+                metrics: ["topMargin": GridContainerViewTopMargin],
                 views: ["gridContainerView": gridContainerView]))
         self.view.addConstraints(
             NSLayoutConstraint.constraintsWithVisualFormat(
