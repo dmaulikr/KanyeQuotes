@@ -34,8 +34,6 @@ class GridVideosViewController: UICollectionViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-
-        
         
         // Register cell classes
         self.collectionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: CellIdentifier)

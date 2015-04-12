@@ -49,7 +49,6 @@ class DraggableView: UIView {
                         frame.origin.y = translation.y
                         self.frame = frame
                         
-                        UIApplication.sharedApplication().setStatusBarHidden(false, withAnimation: UIStatusBarAnimation.Slide)
                     }
             }
             else if panGesture.state == UIGestureRecognizerState.Ended ||
@@ -62,7 +61,6 @@ class DraggableView: UIView {
                         self.frame = frame
                     })
                     
-                    UIApplication.sharedApplication().setStatusBarHidden(true, withAnimation: UIStatusBarAnimation.Slide)
             }
         }
     }

@@ -14,13 +14,15 @@ class GridVideosFlowLayout: UICollectionViewFlowLayout {
         
         super.init()
         
-        let margin: CGFloat = 2.0
+        let margin:CGFloat = 2.0
+        let squaresPerRow:CGFloat = 3.0
+        let marginsPerRow:CGFloat = squaresPerRow - 1.0
         let screenWidth = UIScreen.mainScreen().bounds.size.width
-        
-        itemSize = CGSizeMake((screenWidth - margin*4)/3, (screenWidth - margin*4)/3)
+        let squareItemSizeWidthFit = (screenWidth - margin*marginsPerRow)/squaresPerRow
+        itemSize = CGSizeMake(squareItemSizeWidthFit, squareItemSizeWidthFit)
         minimumLineSpacing = margin
         minimumInteritemSpacing = margin/2
-        self.sectionInset = UIEdgeInsetsMake(margin, margin, margin, margin)
+        self.sectionInset = UIEdgeInsetsZero
     }
 
     required init(coder aDecoder: NSCoder) {

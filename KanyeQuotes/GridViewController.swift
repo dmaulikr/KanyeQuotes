@@ -38,7 +38,6 @@ class GridViewController: UIViewController {
                 metrics: nil,
                 views: ["appInfoView": appInfoView]))
         
-        gridContainerView.backgroundColor = UIColor(red: 10, green: 10, blue: 10, alpha: 1)
         gridContainerView.setTranslatesAutoresizingMaskIntoConstraints(false)
         self.view.addSubview(gridContainerView)
         self.view.addConstraints(

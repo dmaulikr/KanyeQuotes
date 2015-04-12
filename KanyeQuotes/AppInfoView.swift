@@ -30,10 +30,12 @@ class AppInfoView: UIView {
     
     func setup() {
         
-        self.backgroundColor = UIColor.whiteColor()
+        self.backgroundColor = UIColor.blackColor()
         
-        self.appNameLabel.font = UIFont.systemFontOfSize(24)
+        self.appNameLabel.font = UIFont(name: "HelveticaNeue-Bold", size: 24.0)
+        self.appNameLabel.backgroundColor = UIColor.clearColor()
         self.appNameLabel.text = "YEEZY SPEAKS"
+        self.appNameLabel.textColor = UIColor.whiteColor()
         self.appNameLabel.textAlignment = NSTextAlignment.Center
         self.appNameLabel.setTranslatesAutoresizingMaskIntoConstraints(false)
         self.addSubview(self.appNameLabel)
