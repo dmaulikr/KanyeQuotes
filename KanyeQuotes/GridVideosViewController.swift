@@ -16,11 +16,30 @@ class GridVideosViewController: UICollectionViewController {
     
     let videoList:[String] = [
         "george_bush_square.mp4",
-        "answers_sway_square.mp4",
-        "marginalize_me_square.mp4",
         "warhol_square.mp4",
+        "shakespeare_square.mp4",
         "impactful_artist_square.mp4",
-        "no_ralph_square.mp4"]
+        "answers_sway_square.mp4",
+        "no_ralph_square.mp4",
+        "marginalize_me_square.mp4",
+        "water_bottle_square.mp4",
+        "south_park_square.mp4",
+        "culture_square.mp4",
+        "leather_jogging_pant2_square.mp4",
+        "rap_new_rock_square.mp4",
+        "we_culture_square.mp4",
+        "biggest_rockstar_square.mp4",
+        "no_1_rockstar_square.mp4",
+        "in_paris_square.mp4",
+        "versace_square.mp4",
+        "fan_of_yourself_square.mp4",
+        "a_god_square.mp4",
+        "glitch_square.mp4",
+        "jordans_on_the_beach_square.mp4",
+        "send_paparazzi_square.mp4",
+        "sing_gucci_square.mp4",
+        "kim_kardijon_square.mp4",
+        "bigger_than_walmart_square.mp4"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
