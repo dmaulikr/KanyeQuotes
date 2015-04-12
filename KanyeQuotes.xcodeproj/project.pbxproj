@@ -24,6 +24,7 @@
 		0DA4D5131AD9EB97006D4017 /* DraggableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA4D5121AD9EB97006D4017 /* DraggableView.swift */; };
 		0DA4D5151ADA0412006D4017 /* AppInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA4D5141ADA0412006D4017 /* AppInfoView.swift */; };
 		0DA4D5191ADA0A0F006D4017 /* george_bush_square.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0DA4D5181ADA0A0F006D4017 /* george_bush_square.mp4 */; };
+		0DA4D51B1ADA0D40006D4017 /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA4D51A1ADA0D40006D4017 /* VideoPlayer.swift */; };
 		22AA22FE767D8F8D5D4D6C1F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F51BA87A2E42B88474E762A0 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		0DA4D5121AD9EB97006D4017 /* DraggableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableView.swift; sourceTree = "<group>"; };
 		0DA4D5141ADA0412006D4017 /* AppInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppInfoView.swift; sourceTree = "<group>"; };
 		0DA4D5181ADA0A0F006D4017 /* george_bush_square.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = george_bush_square.mp4; path = videos/george_bush_square.mp4; sourceTree = "<group>"; };
+		0DA4D51A1ADA0D40006D4017 /* VideoPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
 		B931E560FBF05E527FE626BD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		EB39C342E7A976C7BDCFCE54 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F51BA87A2E42B88474E762A0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +115,7 @@
 				0DA4D5121AD9EB97006D4017 /* DraggableView.swift */,
 				0D49A9D41AC3A71B002581F8 /* GridVideosFlowLayout.swift */,
 				0D3868731AC3A41B004A0EC0 /* GridVideosViewController.swift */,
+				0DA4D51A1ADA0D40006D4017 /* VideoPlayer.swift */,
 				0D3868581AC3A113004A0EC0 /* Images.xcassets */,
 				0D38685A1AC3A113004A0EC0 /* LaunchScreen.xib */,
 				0D3868501AC3A113004A0EC0 /* KanyeQuotes.xcdatamodeld */,
@@ -318,6 +321,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DA4D51B1ADA0D40006D4017 /* VideoPlayer.swift in Sources */,
 				0DA4D5131AD9EB97006D4017 /* DraggableView.swift in Sources */,
 				0D3868721AC3A263004A0EC0 /* GridViewController.swift in Sources */,
 				0DA4D5151ADA0412006D4017 /* AppInfoView.swift in Sources */,

@@ -70,9 +70,9 @@ class GridVideosViewController: UICollectionViewController {
         // add player and player layer
         let videoPath: String = self.videoList[indexPath.row]
         if let
-            player = AVPlayer(URL: self.fileURLFromVideoPath(videoPath)),
+            player = VideoPlayer(URL: self.fileURLFromVideoPath(videoPath)),
             layer = AVPlayerLayer() {
-                
+
                 layer.player = player
                 layer.frame = cell.bounds
                 layer.backgroundColor = UIColor.whiteColor().CGColor
