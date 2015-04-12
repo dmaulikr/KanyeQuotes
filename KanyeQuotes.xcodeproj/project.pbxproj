@@ -263,6 +263,7 @@
 				TargetAttributes = {
 					0D3868481AC3A113004A0EC0 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = TUDQ826894;
 					};
 					0D3868601AC3A113004A0EC0 = {
 						CreatedOnToolsVersion = 6.2;
@@ -486,6 +487,7 @@
 			baseConfigurationReference = B931E560FBF05E527FE626BD /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = KanyeQuotes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -497,6 +499,7 @@
 			baseConfigurationReference = EB39C342E7A976C7BDCFCE54 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = KanyeQuotes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
